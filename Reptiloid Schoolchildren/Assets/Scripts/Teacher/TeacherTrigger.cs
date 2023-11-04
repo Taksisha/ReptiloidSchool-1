@@ -8,7 +8,7 @@ public class TeacherTrigger : MonoBehaviour
     {
         if (collision.TryGetComponent<StudentTrigger>(out StudentTrigger studentTrigger))
         {
-            studentTrigger.
+            Debug.Log("LOG");//studentTrigger.
         }
     }
 }
