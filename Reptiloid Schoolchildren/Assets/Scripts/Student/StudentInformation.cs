@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "StudentInformation", menuName = "ScriptableObjects/StudentInformation")]
-public class StudentInformation : MonoBehaviour
+public class StudentInformation : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int _intelligence;
+    [SerializeField] private int _strength;
+    [SerializeField] private int _selfConfidence;
+    [SerializeField] private int _sociability;
+    [SerializeField] private int _positivity;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

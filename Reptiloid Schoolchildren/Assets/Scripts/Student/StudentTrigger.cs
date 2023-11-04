@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class StudentTrigger : MonoBehaviour
 {
-  // [SerializeField]
+    [SerializeField] private StudentInformation _studentInformation;
 }
