@@ -5,15 +5,18 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float speed = 7f;
-    public float Move = 40f;
+    public float MoveX;
+    public float MoveY;
 
     void Update()
     {
         Rigidbody2D rb;
         rb = GetComponent<Rigidbody2D>();
 
-        Move = Input.GetAxis("Horizontal");
+        MoveX = Input.GetAxis("Horizontal");
+        MoveY = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(Move * speed, rb.velocity.y);
+
+        rb.velocity = new Vector2(MoveX * speed, MoveY * speed);
     }
 }
