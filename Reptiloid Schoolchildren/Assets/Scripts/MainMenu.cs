@@ -10,8 +10,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level");
     }
 
+    public void PlayMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void ExitGame()
     {
+        Debug.Log("Вышли из игры");
         Application.Quit();
     }
 }
